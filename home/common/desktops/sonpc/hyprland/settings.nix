@@ -108,6 +108,9 @@
 
     # Window rules
     windowrulev2 = [
+      "idleinhibit fullscreen, class:^(*)$"
+      "idleinhibit fullscreen, title:^(*)$"
+      "idleinhibit fullscreen, fullscreen:1"
       "noborder,title:^(.*ulauncher.*)$"
       "noborder,title:^(.*Ulauncher.*)$"
       "noshadow,title:^(.*ulauncher.*)$"

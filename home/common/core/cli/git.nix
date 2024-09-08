@@ -6,13 +6,6 @@
     extraConfig = {
       core.editor = "nvim";
       init.defaultBranch = "main";
-      gpg = {
-        format = "ssh";
-        "ssh" = {
-          program = "op-ssh-sign";
-        };
-      };
-      commit.gpgSign = true;
       merge.conflictStyle = "zdiff3";
       branch.sort = "committerdate";
       push.autoSetupRemote = true;
