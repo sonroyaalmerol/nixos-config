@@ -2,6 +2,7 @@
   pkgs,
   outputs,
   inputs,
+  lib,
   ...
 }: {
   imports =
@@ -10,6 +11,9 @@
       inputs.hardware.nixosModules.common-cpu-amd
       inputs.hardware.nixosModules.common-gpu-amd
       ./hardware-configuration.nix
+
+      # Secure boot
+      inputs.lanzaboote.nixosModules.lanzaboote
 
       # Common config
       ../common/core
@@ -25,13 +29,20 @@
 
   # Bootloader.
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
-  boot.loader.systemd-boot.enable = true;
+
+  boot.loader.grub.devices = ["nodev"];
+  boot.loader.grub.efiSupport = true;
   boot.loader.grub.useOSProber = true;
   boot.loader.grub.configurationLimit = 15;
-  boot.loader.systemd-boot.configurationLimit = 15;
+  
+  boot.loader.systemd-boot.enable = lib.mkForce false;
+  boot.lanzaboote = {
+    enable = true;
+    pkiBundle = "/etc/secureboot";
+  };
+
   boot.supportedFilesystems = ["ntfs"];
 
   # amd gpu support for kernel
