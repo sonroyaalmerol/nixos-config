@@ -20,7 +20,7 @@
       templ
       htmx-lsp
       hyprls
-      nixd
+      nil
     ];
     backup = false;
   };
