@@ -1,0 +1,56 @@
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    ./bat
+    ./btop
+    ./direnv.nix
+    ./eza.nix
+    ./fzf.nix
+    ./gh.nix
+    ./git.nix
+    ./git-cliff.nix
+    ./jujutsu.nix
+    ./lazygit.nix
+    ./neovim.nix
+    ./ripgrep.nix
+    ./scripts.nix
+    ./starship.nix
+    ./tmux
+    ./yazi
+    ./zoxide.nix
+  ];
+
+  home.packages = with pkgs; [
+    coreutils-full
+    entr
+    fd
+    gh
+    git-extras
+    glxinfo
+    gnumake
+    htop
+    jc
+    jq
+    just
+    lazydocker
+    libnotify
+    libva-utils
+    libxcrypt
+    ncdu
+    neofetch
+    nix-tree
+    openvpn
+    p7zip
+    pciutils
+    tldr
+    unrar
+    unzip
+    vim
+    vulkan-tools
+    wget
+    zip
+  ];
+}

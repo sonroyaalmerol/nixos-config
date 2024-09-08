@@ -1,0 +1,15 @@
+{pkgs, ...}: {
+  qt = {
+    enable = true;
+    platformTheme.name = "kvantum";
+    style = {
+      name = "kvantum";
+      catppuccin = {
+        enable = true;
+        apply = true;
+        flavor = "mocha";
+        accent = "mauve";
+      };
+    };
+  };
+}
