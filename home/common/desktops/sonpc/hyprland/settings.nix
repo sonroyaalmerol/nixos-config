@@ -14,6 +14,8 @@
     exec-once = [
       "waybar"
       "hyprctl setcursor Bibata-Modern-Ice 24"
+      "signal-desktop --start-in-tray"
+      "vesktop"
     ];
 
     input = {
