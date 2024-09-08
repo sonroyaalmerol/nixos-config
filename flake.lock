@@ -471,11 +471,11 @@
     "nvchad-starter": {
       "flake": false,
       "locked": {
-        "lastModified": 1725838782,
-        "narHash": "sha256-rBb9lk/f3qMfb5sYszWZO59y3Lbl7mOun1IqfG0zhh8=",
+        "lastModified": 1725839369,
+        "narHash": "sha256-YUyzD/p12uCXevVP/JQd2zs61Nlo6z3rfhQsVLCxWWI=",
         "owner": "sonroyaalmerol",
         "repo": "nvchad-personal-config",
-        "rev": "eda8ccf1d93b9bd4c4938fe4348063d8c6a2f3fd",
+        "rev": "e589b43b3d88a4fbc523b848bd3d91e88486a546",
         "type": "github"
       },
       "original": {
