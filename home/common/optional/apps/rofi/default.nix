@@ -2,7 +2,7 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-    font = "Rec Mono Semicasual";
+    font = "FiraCode Nerd Font Mono";
     location = "center";
     terminal = "kitty";
     plugins = [
