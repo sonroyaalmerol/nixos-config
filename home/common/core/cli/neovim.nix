@@ -19,6 +19,8 @@
       omnisharp-roslyn
       templ
       htmx-lsp
+      hyprls
+      nixd
     ];
     backup = false;
   };
