@@ -43,12 +43,33 @@
     pkiBundle = "/etc/secureboot";
   };
 
+  boot.plymouth = {
+    enable = true;
+    theme = "rings";
+    themePackages = with pkgs; [
+      # By default we would install all themes
+      (adi1090x-plymouth-themes.override {
+        selected_themes = [ "rings" ];
+      })
+    ];
+  };
+
+  boot.consoleLogLevel = 0;
+  boot.initrd.verbose = false;
+
   boot.supportedFilesystems = ["ntfs"];
 
   # amd gpu support for kernel
   boot.initrd.kernelModules = ["amdgpu"];
 
   boot.kernelParams = [
+    "quiet"
+    "splash"
+    "boot.shell_on_fail"
+    "loglevel=3"
+    "rd.systemd.show_status=false"
+    "rd.udev.log_level=3"
+    "udev.log_priority=3"
     "video=DP-2:1920x1080@144"
     "video=HDMI-A-1:1680x1050@60"
   ];
