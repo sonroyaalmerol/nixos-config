@@ -11,7 +11,7 @@
       listener = [
         {
           timeout = 290;
-          on-timeout = "while true; do hyprctl dispatch dpms off; sleep 1; done &";  # Dispatch dpms off every 5 seconds indefinitely (in background)
+          on-timeout = "while true; do hyprctl dispatch dpms off; sleep 0.5; done &";  # Dispatch dpms off every 5 seconds indefinitely (in background)
           on-resume = "pkill -f 'hyprctl dispatch dpms off'";                        # Kill the loop on resume
         }
         {
@@ -20,7 +20,7 @@
         }
         {
           timeout = 10;
-          on-timeout = "while pidof hyprlock; do hyprctl dispatch dpms off; sleep 1; done &";  # Dispatch dpms off every 5 seconds if hyprlock is running (in background)
+          on-timeout = "while pidof hyprlock; do hyprctl dispatch dpms off; sleep 0.5; done &";  # Dispatch dpms off every 5 seconds if hyprlock is running (in background)
           on-resume = "pkill -f 'hyprctl dispatch dpms off'";                                  # Kill the loop on resume
         }
       ];
