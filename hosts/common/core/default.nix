@@ -1,6 +1,5 @@
 {
   inputs,
-  outputs,
   ...
 }: {
   imports = [
@@ -13,6 +12,7 @@
     ./networking.nix
     ./nix.nix
     ./pipewire.nix
+    ./printing.nix
     ./services.nix
     ./zsh.nix
   ];
