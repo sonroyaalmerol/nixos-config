@@ -38,7 +38,6 @@
     slurp
     wl-clipboard
     wlogout
-    #xdg-desktop-portal-gtk
-    #xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
   ];
 }

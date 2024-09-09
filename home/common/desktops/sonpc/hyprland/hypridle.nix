@@ -11,7 +11,7 @@
       listener = [
         {
           timeout = 290;
-          on-timeout = "pidof hyprlock || (sleep 5; hyprctl dispatch dpms off)";
+          on-timeout = "pidof hyprlock || hyprctl dispatch dpms off";
         }
         {
           timeout = 300;
@@ -19,7 +19,7 @@
         }
         {
           timeout = 10;
-          on-timeout = "pidof hyprlock && (sleep 5; hyprctl dispatch dpms off)";
+          on-timeout = "pidof hyprlock && hyprctl dispatch dpms off";
         }
       ];
     };
