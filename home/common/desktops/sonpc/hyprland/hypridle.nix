@@ -10,9 +10,33 @@
 
       listener = [
         {
-          timeout = 300;                                 # 5min
-          on-timeout = "loginctl lock-session && hyprctl dispatch dpms off";            # lock screen when timeout has passed
-          on-resume = "hyprctl dispatch dpms on";          # screen on when activity is detected after timeout has fired.
+          timeout = 1;
+          on-timeout = "pidof hyprlock || (bn=$(brightnessctl g) && [ \"$bn\" != \"$(cat /tmp/bn)\" ] && echo $bn > /tmp/bn)";
+          on-resume = "pidof hyprlock || (brightnessctl set $(cat /tmp/bn) && hyprctl dispatch dpms on)";
+        }
+        {
+          timeout = 280;
+          on-timeout = "pidof hyprlock || brightnessctl -s set 5";
+        }
+        {
+          timeout = 290;
+          on-timeout = "pidof hyprlock || hyprctl dispatch dpms off";
+        }
+        {
+          timeout = 300;
+          on-timeout = "loginctl lock-session";
+        }
+        {
+          timeout = 1;
+          on-resume = "pidof hyprlock && (pid=$(pgrep -o hyprlock) && [ \"$(ps -p $pid -o etimes= | tr -d ' ')\" -gt 1 ] && brightnessctl set $(cat /tmp/bn) && hyprctl dispatch dpms on)";
+        }
+        {
+          timeout = 5;
+          on-timeout = "pidof hyprlock && brightnessctl -s set 5";
+        }
+        {
+          timeout = 10;
+          on-timeout = "pidof hyprlock && hyprctl dispatch dpms off";
         }
       ];
     };
