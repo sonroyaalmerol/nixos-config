@@ -5,14 +5,14 @@
       general = {
         lock_cmd = "pidof hyprlock || hyprlock";       # avoid starting multiple hyprlock instances.
         before_sleep_cmd = "loginctl lock-session";    # lock before suspend.
-        after_sleep_cmd = "hyprctl dispatch dpms on";  # to avoid having to press a key twice to turn on the display.
-        ignore_dbus_inhibit = true;
+        after_sleep_cmd = "hyprctl dispatch dpms on; pkill -f 'hyprctl dispatch dpms off'"; # Stop dpms off loop on resume
       };
 
       listener = [
         {
           timeout = 290;
-          on-timeout = "pidof hyprlock || hyprctl dispatch dpms off";
+          on-timeout = "while true; do hyprctl dispatch dpms off; sleep 5; done &";  # Dispatch dpms off every 5 seconds indefinitely (in background)
+          on-resume = "pkill -f 'hyprctl dispatch dpms off'";                        # Kill the loop on resume
         }
         {
           timeout = 300;
@@ -20,7 +20,8 @@
         }
         {
           timeout = 10;
-          on-timeout = "pidof hyprlock && hyprctl dispatch dpms off";
+          on-timeout = "while pidof hyprlock; do hyprctl dispatch dpms off; sleep 5; done &";  # Dispatch dpms off every 5 seconds if hyprlock is running (in background)
+          on-resume = "pkill -f 'hyprctl dispatch dpms off'";                                  # Kill the loop on resume
         }
       ];
     };
