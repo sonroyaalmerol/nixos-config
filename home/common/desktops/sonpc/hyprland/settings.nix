@@ -180,8 +180,8 @@
     ];
   };
 
-  #wayland.windowManager.hyprland.systemd.variables = [
-  #  "WAYLAND_DISPLAY"
-  #  "XDG_CURRENT_DESKTOP"
-  #];
+  wayland.windowManager.hyprland.systemd.variables = [
+    "WAYLAND_DISPLAY"
+    "XDG_CURRENT_DESKTOP"
+  ];
 }
