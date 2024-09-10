@@ -13,6 +13,7 @@
     ./nix.nix
     ./pipewire.nix
     ./printing.nix
+    ./scanning.nix
     ./services.nix
     ./zsh.nix
   ];

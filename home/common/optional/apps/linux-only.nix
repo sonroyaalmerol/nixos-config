@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     libgcc
     eog
+    gnome.simple-scan
     gnome-keyring
     gnome-session
     nautilus
