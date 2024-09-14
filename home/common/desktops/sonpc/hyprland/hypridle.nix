@@ -11,8 +11,8 @@
       listener = [
         {
           timeout = 290;
-          on-timeout = "while true; do hyprctl dispatch dpms off; done &";  # Dispatch dpms off every 5 seconds indefinitely (in background)
-          on-resume = "pkill -f 'hyprctl dispatch dpms off'";                        # Kill the loop on resume
+          on-timeout = "while true; do hyprctl dispatch dpms off; sleep 0.5; done &";  # Dispatch dpms off every 5 seconds indefinitely (in background)
+          on-resume = "pkill -f 'hyprctl dispatch dpms off'; hyprctl --instance 0 'keyword misc:allow_session_lock_restore 1'; pidof hyprlock || hyprctl --instance 0 'dispatch exec hyprlock'";                        # Kill the loop on resume
         }
         {
           timeout = 300;
@@ -20,8 +20,8 @@
         }
         {
           timeout = 10;
-          on-timeout = "while pidof hyprlock; do hyprctl dispatch dpms off; done &";  # Dispatch dpms off every 5 seconds if hyprlock is running (in background)
-          on-resume = "pkill -f 'hyprctl dispatch dpms off'";                                  # Kill the loop on resume
+          on-timeout = "while pidof hyprlock; do hyprctl dispatch dpms off; sleep 0.5; done &";  # Dispatch dpms off every 5 seconds if hyprlock is running (in background)
+          on-resume = "pkill -f 'hyprctl dispatch dpms off'; hyprctl --instance 0 'keyword misc:allow_session_lock_restore 1'; pidof hyprlock || hyprctl --instance 0 'dispatch exec hyprlock'";                        # Kill the loop on resume
         }
       ];
     };
