@@ -24,6 +24,7 @@
   ];
 
   home.packages = with pkgs; [
+    buf
     coreutils-full
     entr
     fd
