@@ -21,6 +21,7 @@
       htmx-lsp
       hyprls
       nil
+      buf
     ];
     backup = false;
   };
