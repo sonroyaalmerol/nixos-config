@@ -15,6 +15,7 @@
       tailwindcss
       typescript
       pyright
+      basedpyright
       gopls
       omnisharp-roslyn
       templ
