@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    python312
     go
+    python3Full
     nodejs_20
     rustc
     lua
