@@ -14,7 +14,6 @@
       clang-tools
       tailwindcss
       typescript
-      pyright
       basedpyright
       gopls
       omnisharp-roslyn
