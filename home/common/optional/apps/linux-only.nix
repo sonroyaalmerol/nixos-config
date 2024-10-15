@@ -3,6 +3,7 @@
     ./gpg.nix
   ];
   home.packages = with pkgs; [
+    android-tools
     libgcc
     eog
     gnome.simple-scan
