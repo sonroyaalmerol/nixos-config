@@ -78,24 +78,6 @@
   networking.hostName = "sonpc"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-      rocmPackages.clr
-      rocmPackages.clr.icd
-      amdvlk
-    ];
-    extraPackages32 = with pkgs; [
-      driversi686Linux.amdvlk
-    ];
-  };
-
-  environment.variables = {
-    ROC_ENABLE_PRE_VEGA = "1";
-    VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
-  };
-
   # Load amd driver for Xorg and Wayland
   services.xserver.videoDrivers = ["amdgpu"];
 
