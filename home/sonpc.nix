@@ -3,6 +3,7 @@
     ./global-nixos.nix
     ./common/desktops/sonpc/waybar
     ./common/desktops/sonpc/services/mako
+    ./common/desktops/sonpc/services/openldap
 
     inputs.catppuccin.homeManagerModules.catppuccin
     ./common/desktops/sonpc/gtk.nix
