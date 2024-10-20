@@ -15,6 +15,7 @@
     ./jujutsu.nix
     ./lazygit.nix
     ./neovim.nix
+    ./openldap.nix
     ./ripgrep.nix
     ./scripts.nix
     ./starship.nix

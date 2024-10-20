@@ -1,0 +1,5 @@
+{
+  programs.openldap = {
+    enable = true;
+  };
+}
