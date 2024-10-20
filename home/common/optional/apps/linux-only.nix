@@ -18,6 +18,7 @@
     lshw
     morgen
     obsidian
+    openldap
     pdfarranger
     psmisc
     sbctl
