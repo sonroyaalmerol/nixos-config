@@ -1,5 +1,6 @@
 {
   inputs,
+  lib,
   ...
 }: {
   imports = [
@@ -19,4 +20,6 @@
   ];
 
   hardware.enableRedistributableFirmware = true;
+  systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
+
 }
