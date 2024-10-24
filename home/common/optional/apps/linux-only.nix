@@ -21,6 +21,7 @@
     pdfarranger
     psmisc
     sbctl
+    shotwell
     signal-desktop
     udisks
     vscode-fhs
