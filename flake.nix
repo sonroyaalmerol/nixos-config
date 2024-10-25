@@ -10,7 +10,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin.url = "github:catppuccin/nix";
+    catppuccin.url = "github:catppuccin/nix/v1.0.2";
 
     # TODO: Apply fixes to nixos-xps
     hardware.url = "github:nixos/nixos-hardware";
