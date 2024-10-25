@@ -6,11 +6,10 @@
     }; 
     style = {
       name = "kvantum";
-      catppuccin = {
-        enable = true;
-        apply = true;
-        accent = "pink";
-      };
+      #catppuccin = {
+      #  enable = true;
+      #  apply = true;
+      #};
     };
   };
 }
