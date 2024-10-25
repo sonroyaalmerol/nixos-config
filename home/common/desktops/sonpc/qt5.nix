@@ -9,6 +9,7 @@
       catppuccin = {
         enable = true;
         apply = true;
+        accent = "pink";
       };
     };
   };
