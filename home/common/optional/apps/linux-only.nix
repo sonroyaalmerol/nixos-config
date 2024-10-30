@@ -18,6 +18,7 @@
     lshw
     morgen
     obsidian
+    parted
     pdfarranger
     psmisc
     sbctl
