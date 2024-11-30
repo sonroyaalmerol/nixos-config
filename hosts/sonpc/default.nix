@@ -71,8 +71,8 @@
     "rd.systemd.show_status=false"
     "rd.udev.log_level=3"
     "udev.log_priority=3"
+    "video=DP-1:2560x1440@180"
     "video=DP-2:1920x1080@144"
-    "video=HDMI-A-1:1680x1050@60"
   ];
 
   networking.hostName = "sonpc"; # Define your hostname.
