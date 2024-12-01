@@ -57,10 +57,10 @@
         popups = true;
       };
 
-      drop_shadow = true;
-      shadow_range = 4;
-      shadow_render_power = 3;
-      "col.shadow" = "$base";
+      #drop_shadow = true;
+      #shadow_range = 4;
+      #shadow_render_power = 3;
+      #"col.shadow" = "$base";
     };
     
     binds = {
