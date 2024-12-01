@@ -7,6 +7,6 @@
     };
     shellIntegration.enableBashIntegration = true;
     shellIntegration.enableZshIntegration = true;
-    themeFile = "Rosé Pine";
+    themeFile = "rose-pine";
   };
 }
