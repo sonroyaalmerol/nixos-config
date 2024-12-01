@@ -10,7 +10,7 @@ configuration {
 @import "colors.rasi"
 
 * {
-    font: "FiraCode Nerd Font Mono 11";
+    font: "FiraCode NF 11";
 }
 
 window {
