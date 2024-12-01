@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "FiraCode Nerd Font Mono";
+      name = "FiraCode";
       size = 11.0;
     };
     shellIntegration.enableBashIntegration = true;
