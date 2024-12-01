@@ -9,7 +9,7 @@
     textColor = "#e0def4";
     progressColor = "over #f6c177";
     borderSize = 2;
-    font = "FiraCode NF";
+    font = "FiraCode Nerd Font";
     icons = true;
     extraConfig = builtins.readFile ./config;
   };
