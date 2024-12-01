@@ -5,6 +5,6 @@
 
   home.packages = with pkgs; [
     betterbird
-    vesktop 
+    discord-canary
   ];
 }

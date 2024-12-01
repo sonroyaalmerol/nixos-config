@@ -6,7 +6,7 @@
     android-tools
     libgcc
     eog
-    gnome.simple-scan
+    simple-scan
     gnome-keyring
     gnome-session
     nautilus
