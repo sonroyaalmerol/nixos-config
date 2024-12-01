@@ -2,7 +2,7 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nerd-fonts.fira-code
-    nerd-fonts.cascadia-code
+    nerd-fonts.caskaydia-cove
     nerd-fonts.fantasque-sans-mono
     font-awesome
     noto-fonts
