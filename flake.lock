@@ -509,11 +509,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1732837521,
-        "narHash": "sha256-jNRNr49UiuIwaarqijgdTR2qLPifxsVhlJrKzQ8XUIE=",
+        "lastModified": 1733015953,
+        "narHash": "sha256-t4BBVpwG9B4hLgc6GUBuj3cjU7lP/PJfpTHuSqE+crk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+        "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
         "type": "github"
       },
       "original": {
@@ -623,7 +623,8 @@
         "nix-colors": "nix-colors",
         "nixpkgs": "nixpkgs_2",
         "nvchad-starter": "nvchad-starter",
-        "nvchad4nix": "nvchad4nix"
+        "nvchad4nix": "nvchad4nix",
+        "vimix-cursor": "vimix-cursor"
       }
     },
     "rust-overlay": {
@@ -678,6 +679,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "vimix-cursor": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728864472,
+        "narHash": "sha256-OCARYM03MW4Y9tvKJPV2u5VJbR7eJ2KPP0IMuGae3fs=",
+        "owner": "4lrick",
+        "repo": "XCursor-Pro-Hyprcursor",
+        "rev": "5cefd976fda4e187c5daf249e8da261659c8518c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "4lrick",
+        "repo": "XCursor-Pro-Hyprcursor",
         "type": "github"
       }
     },
