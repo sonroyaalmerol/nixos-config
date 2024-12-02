@@ -2,7 +2,9 @@
   programs.brave = {
     enable = true;
     commandLineArgs = [
-      "--ozone-platform=wayland"
+      "--enable-features=VaapiVideoDecodeLinuxGL"
+      "--use-gl=angle"
+      "--use-angle=gl"
     ];
   };
 }
