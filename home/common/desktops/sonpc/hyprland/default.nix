@@ -11,6 +11,11 @@
     source = ./addons;
   };
 
+  home.file.".local/share/icons" = {
+    recursive = true;
+    source = ./hyprcursor;
+  };
+
   imports = [
     ./monitors.nix
     ./settings.nix

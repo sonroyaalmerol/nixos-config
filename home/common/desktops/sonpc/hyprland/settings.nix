@@ -6,6 +6,9 @@
 
     # Environment variables
     env = [
+      "HYPRCURSOR_THEME,XCursor-Pro-Dark-Hyprcursor"
+      "HYPRCURSOR_SIZE,20"
+      "XCURSOR_THEME,Bibata-Modern-Ice"
       "XCURSOR_SIZE,20"
       "WLR_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1"
     ];
@@ -13,9 +16,8 @@
     # Execute commands on startup
     exec-once = [
       "waybar"
-      "hyprctl setcursor Bibata-Modern-Ice 24"
       "signal-desktop --start-in-tray"
-      "vesktop"
+      "discord"
     ];
 
     input = {

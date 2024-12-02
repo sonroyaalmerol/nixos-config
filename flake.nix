@@ -39,6 +39,8 @@
     #  url = "github:hyprwm/hyprland-plugins";
     #  inputs.hyprland.follows = "hyprland";
     #};
+    vimix-cursor.url = "github:4lrick/XCursor-Pro-Hyprcursor";
+    vimix-cursor.flake = false;
   };
 
   outputs = {
