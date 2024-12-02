@@ -623,8 +623,7 @@
         "nix-colors": "nix-colors",
         "nixpkgs": "nixpkgs_2",
         "nvchad-starter": "nvchad-starter",
-        "nvchad4nix": "nvchad4nix",
-        "vimix-cursor": "vimix-cursor"
+        "nvchad4nix": "nvchad4nix"
       }
     },
     "rust-overlay": {
@@ -679,22 +678,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "vimix-cursor": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1728864472,
-        "narHash": "sha256-OCARYM03MW4Y9tvKJPV2u5VJbR7eJ2KPP0IMuGae3fs=",
-        "owner": "4lrick",
-        "repo": "XCursor-Pro-Hyprcursor",
-        "rev": "5cefd976fda4e187c5daf249e8da261659c8518c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "4lrick",
-        "repo": "XCursor-Pro-Hyprcursor",
         "type": "github"
       }
     },
