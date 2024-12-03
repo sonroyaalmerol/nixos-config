@@ -35,6 +35,9 @@
 
   home.packages = with pkgs; [
     brightnessctl
+    hypridle
+    hyprlock
+    hyprpaper
     grim
     libinput
     networkmanagerapplet
