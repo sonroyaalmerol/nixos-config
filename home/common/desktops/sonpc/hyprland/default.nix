@@ -47,5 +47,6 @@
     wl-clipboard
     wlogout
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
   ];
 }
