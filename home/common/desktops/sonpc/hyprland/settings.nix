@@ -182,10 +182,4 @@
       "10, monitor:DP-2"
     ];
   };
-
-  wayland.windowManager.hyprland.systemd.variables = [
-    "--all"
-    #"WAYLAND_DISPLAY"
-    #"XDG_CURRENT_DESKTOP"
-  ];
 }
