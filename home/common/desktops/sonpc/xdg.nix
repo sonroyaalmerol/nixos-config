@@ -15,6 +15,7 @@
 
   xdg.portal = {
     enable = true;
+    xdgOpenUsePortal = true;
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-hyprland
@@ -23,7 +24,6 @@
 
   xdg.mimeApps = {
     enable = true;
-    xdgOpenUsePortal = true;
     defaultApplications = {
       "application/pdf" = ["okular.desktop"];
       "text/html" = ["brave-browser.desktop"];
