@@ -4,6 +4,7 @@
   ];
   home.packages = with pkgs; [
     android-tools
+    esphome
     libgcc
     eog
     simple-scan
