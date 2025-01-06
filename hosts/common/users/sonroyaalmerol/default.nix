@@ -11,7 +11,7 @@ in {
     isNormalUser = true;
     description = "Son Roy Almerol";
     shell = pkgs.zsh;
-    extraGroups = ["networkmanager" "wheel" "docker" "podman" "video"] ++ ifTheyExist ["libvirtd" "mysql" "network" "git" "scanner" "lp"];
+    extraGroups = ["networkmanager" "wheel" "docker" "podman" "video" "dialout"] ++ ifTheyExist ["libvirtd" "mysql" "network" "git" "scanner" "lp"];
     packages = [pkgs.home-manager];
   };
 

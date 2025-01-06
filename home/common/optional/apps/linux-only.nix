@@ -26,6 +26,7 @@
     shotwell
     signal-desktop
     udisks
+    qmk
     vscode-fhs
   ];
 }
