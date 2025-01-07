@@ -22,6 +22,7 @@
       ../common/optional/hyprland.nix
       ../common/optional/steam.nix
       ../common/optional/nixos-upgrades.nix
+      ../common/optional/udev.nix
 
       # User config
       ../common/users/sonroyaalmerol

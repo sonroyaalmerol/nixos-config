@@ -28,5 +28,6 @@
     udisks
     qmk
     vscode-fhs
+    via
   ];
 }
