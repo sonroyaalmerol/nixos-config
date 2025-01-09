@@ -6,5 +6,6 @@
   home.packages = with pkgs; [
     discord-canary
     parsec-bin
+    pv
   ];
 }
