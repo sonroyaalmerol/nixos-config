@@ -5,9 +5,15 @@
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     systemd.variables = ["--all"];
+    xwayland.enable = true;
   };
-
-  home.sessionVariables.NIXOS_OZONE_WL = "1";
+  
+  home.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = 1;
+    QT_QPA_PLATFORM = "wayland;xcb";
+    LIBSEAT_BACKEND = "logind";
+    NIXOS_OZONE_WL = 1; 
+  };
 
   home.file.".config/hypr" = {
     recursive = true;

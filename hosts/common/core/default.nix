@@ -9,6 +9,7 @@
     ./fonts.nix
     ./gnupg.nix
     ./gvfs.nix
+    ./greetd.nix
     ./locale.nix
     ./networking.nix
     ./nix.nix
