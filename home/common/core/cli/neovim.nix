@@ -12,15 +12,15 @@
       nixd
       vscode-langservers-extracted
       clang-tools
-      tailwindcss
       typescript
       basedpyright
       gopls
-      omnisharp-roslyn
-      templ
-      htmx-lsp
       hyprls
       nil
+      fsouza-prettierd
+      prettier
+      stylua
+      typescript-language-server
     ];
     backup = false;
   };
