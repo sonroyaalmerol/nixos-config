@@ -24,7 +24,7 @@
 
     # neovim
     nvchad-starter = {
-      url = "github:sonroyaalmerol/nvchad-personal-config";
+      url = "github:sonroyaalmerol/nvchad-personal-config/8a8e276bc188e34b7aed0c8a3e4992cb40748c2f";
       flake = false;
     };
     nvchad4nix = {
