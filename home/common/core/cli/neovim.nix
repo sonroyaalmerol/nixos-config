@@ -17,7 +17,7 @@
       gopls
       hyprls
       nil
-      fsouza-prettierd
+      prettierd
       prettier
       stylua
       typescript-language-server
