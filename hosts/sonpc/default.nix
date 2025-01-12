@@ -79,21 +79,9 @@
   networking.hostName = "sonpc"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Load amd driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["amdgpu"];
-
   hardware.bluetooth.enable = true;
 
   console.useXkbConfig = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    enable = true;
-    xkb.options = "ctrl:nocaps";
-    xkb.layout = "us";
-    xkb.variant = "";
-    displayManager.gdm.enable = true;
-  };
 
   system.stateVersion = "24.05";
 }

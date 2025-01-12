@@ -9,7 +9,6 @@
     eog
     simple-scan
     gnome-keyring
-    gnome-session
     nautilus
     seahorse
     gparted
