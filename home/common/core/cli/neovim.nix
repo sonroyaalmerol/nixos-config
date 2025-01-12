@@ -18,7 +18,7 @@
       hyprls
       nil
       prettierd
-      prettier
+      nodePackages.prettier
       stylua
       typescript-language-server
     ];
