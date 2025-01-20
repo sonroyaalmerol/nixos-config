@@ -509,11 +509,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1733015953,
-        "narHash": "sha256-t4BBVpwG9B4hLgc6GUBuj3cjU7lP/PJfpTHuSqE+crk=",
+        "lastModified": 1736344531,
+        "narHash": "sha256-8YVQ9ZbSfuUk2bUf2KRj60NRraLPKPS0Q4QFTbc+c2c=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
+        "rev": "bffc22eb12172e6db3c5dde9e3e5628f8e3e7912",
         "type": "github"
       },
       "original": {
@@ -526,16 +526,17 @@
     "nvchad-starter": {
       "flake": false,
       "locked": {
-        "lastModified": 1728102598,
-        "narHash": "sha256-OVC1g/MgPscedUfpWRXyg08s0GLY0mIo8hjaKZAwZSc=",
+        "lastModified": 1736708291,
+        "narHash": "sha256-01PDC/UjbVmzdpDOJ8D2thDH8plKxvRtsFKyZBGDD0Y=",
         "owner": "sonroyaalmerol",
         "repo": "nvchad-personal-config",
-        "rev": "583fe1c06ee2cde272f012c44fbc432a8634f77f",
+        "rev": "8a8e276bc188e34b7aed0c8a3e4992cb40748c2f",
         "type": "github"
       },
       "original": {
         "owner": "sonroyaalmerol",
         "repo": "nvchad-personal-config",
+        "rev": "8a8e276bc188e34b7aed0c8a3e4992cb40748c2f",
         "type": "github"
       }
     },

@@ -7,5 +7,6 @@
     discord-canary
     parsec-bin
     pv
+    mpv
   ];
 }
