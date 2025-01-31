@@ -81,7 +81,7 @@
           ./hosts/sonpc
           home-manager.nixosModules.home-manager
           {
-            home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "backup-ext";
             home-manager.extraSpecialArgs = {inherit inputs outputs;};
           }
         ];

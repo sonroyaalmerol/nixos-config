@@ -5,6 +5,8 @@
     nodejs_20
     rustc
     lua
+    zig
+    zls
   ];
 
   # conda
