@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   ...
 }: let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
@@ -15,6 +14,8 @@ in {
       };
     };
   };
+
+  programs.regreet.enable = true;
 
   # this is a life saver.
   # literally no documentation about this anywhere.
