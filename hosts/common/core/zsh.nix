@@ -7,5 +7,6 @@
     enableCompletion = true;
   };
   users.defaultUserShell = pkgs.zsh;
+  environment.localBinInPath = true;
   environment.shells = with pkgs; [zsh];
 }
